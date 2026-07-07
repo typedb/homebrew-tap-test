@@ -3,18 +3,18 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 # IMPORTANT: any changes to the formula should be propagated to Homebrew/homebrew-core
-class Typedb < Formula
+class TypedbSnapshot < Formula
   desc "The power of programming, in your database"
   homepage "https://typedb.com"
 
   on_arm do
-    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-arm64/versions/e72c207ec8709c47500129723026bd373fecf258/typedb-all-mac-arm64-e72c207ec8709c47500129723026bd373fecf258.zip"
-    sha256 "f8771727a666beadf86149b6462084954994f5a1dabb7fdac869ce240cbe6aad"
+    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-arm64/versions/3bb6c909731ef123bfd467659e6a7fb5573a7bb5/typedb-all-mac-arm64-3bb6c909731ef123bfd467659e6a7fb5573a7bb5.zip"
+    sha256 "f6820e9db012046b329b7ba766d2c4bcf9950e45cd6d8cba015e6888a061d602"
   end
 
   on_intel do
-    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-x86_64/versions/e72c207ec8709c47500129723026bd373fecf258/typedb-all-mac-x86_64-e72c207ec8709c47500129723026bd373fecf258.zip"
-    sha256 "539d69be94f0c673c5e00759d84b21e269c23dbcd668f947899502856f119761"
+    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-x86_64/versions/3bb6c909731ef123bfd467659e6a7fb5573a7bb5/typedb-all-mac-x86_64-3bb6c909731ef123bfd467659e6a7fb5573a7bb5.zip"
+    sha256 "3784bd4d1aeb33ed5c80ad4c2a9cb19ff74d3f838109b5d94a0cf78b569c2d16"
   end
 
   license "MPL-2.0"
