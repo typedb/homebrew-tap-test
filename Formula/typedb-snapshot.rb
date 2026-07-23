@@ -8,13 +8,13 @@ class TypedbSnapshot < Formula
   homepage "https://typedb.com"
 
   on_arm do
-    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-arm64/versions/ec00b9e38837f0b7202bbf0a75858277c889b904/typedb-all-mac-arm64-ec00b9e38837f0b7202bbf0a75858277c889b904.zip"
-    sha256 "343db87846b176e5d9785c4dfac026f277f9a5f6f9e9440b244832ac2d9ff1c2"
+    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-arm64/versions/b335e112d5dd833ed670ec2b3dc268ae5e3c6d2e/typedb-all-mac-arm64-b335e112d5dd833ed670ec2b3dc268ae5e3c6d2e.zip"
+    sha256 "03a68d7547c1be32f199aac9e9dd70bc8ede6f2fcba7e6753df9c6621f4524d7"
   end
 
   on_intel do
-    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-x86_64/versions/ec00b9e38837f0b7202bbf0a75858277c889b904/typedb-all-mac-x86_64-ec00b9e38837f0b7202bbf0a75858277c889b904.zip"
-    sha256 "3fb1088ea1bbcfb0e3fa355206aa05b1fd76576f5e9c7c58f04ea74f79671dbc"
+    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-x86_64/versions/b335e112d5dd833ed670ec2b3dc268ae5e3c6d2e/typedb-all-mac-x86_64-b335e112d5dd833ed670ec2b3dc268ae5e3c6d2e.zip"
+    sha256 "33ff1268da20c0dce88f38e1f514afd702aa5b2aa1e4eee917a67527ec79945f"
   end
 
   license "MPL-2.0"
@@ -23,9 +23,9 @@ class TypedbSnapshot < Formula
     libexec.install Dir["*"]
     bin.install_symlink libexec / "typedb"
     mkdir_p var/"typedb/data"
-    inreplace libexec/"server/config.yml", "server/data", var/"typedb/data"
+    inreplace libexec/"server/config.yml", "data-directory: \"data\"", "data-directory: \"#{var}/typedb/data\""
     mkdir_p var/"typedb/logs"
-    inreplace libexec/"server/config.yml", "server/logs", var/"typedb/logs"
+    inreplace libexec/"server/config.yml", "directory: \"logs\"", "directory: \"#{var}/typedb/logs\""
   end
 
 end
