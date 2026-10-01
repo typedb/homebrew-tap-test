@@ -6,16 +6,16 @@
 class TypedbSnapshot < Formula
   desc "The power of programming, in your database"
   homepage "https://typedb.com"
-  version "98220b40524a5ce1adb7f845f23ee5b29a03bf24"
+  version "5e8eadf383d588a7de28249185c9d1d667e41f5d"
 
   on_arm do
-    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-arm64/versions/98220b40524a5ce1adb7f845f23ee5b29a03bf24/typedb-all-mac-arm64-98220b40524a5ce1adb7f845f23ee5b29a03bf24.zip"
-    sha256 "9c764a721b388d0ee64edc34040bb37fe2dee37283930ad9070277cf39d1c73e"
+    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-arm64/versions/5e8eadf383d588a7de28249185c9d1d667e41f5d/typedb-all-mac-arm64-5e8eadf383d588a7de28249185c9d1d667e41f5d.zip"
+    sha256 "a092c5eb0ba38ea4e7e5e06a6c75c8fef4f6eab9dfdd301f58dc2bff2b35318f"
   end
 
   on_intel do
-    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-x86_64/versions/98220b40524a5ce1adb7f845f23ee5b29a03bf24/typedb-all-mac-x86_64-98220b40524a5ce1adb7f845f23ee5b29a03bf24.zip"
-    sha256 "32b958b8f52721c981414c03ecf5cd06dfad1a93dcca7104c45aa32a5c42213c"
+    url "https://repo.typedb.com/public/public-snapshot/raw/names/typedb-all-mac-x86_64/versions/5e8eadf383d588a7de28249185c9d1d667e41f5d/typedb-all-mac-x86_64-5e8eadf383d588a7de28249185c9d1d667e41f5d.zip"
+    sha256 "ca3d4560eb6e0b7a0dfd92206fe1fe5baed1e63aba69b179eff8e49328647918"
   end
 
   license "MPL-2.0"
